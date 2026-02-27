@@ -1,0 +1,35 @@
+/* background color */
+body {
+  background-color: #e6f7ff;
+  font-family: Arial, Helvetica, sans-serif;  /* font family */
+  color: #111;                                /* font color */
+}
+
+/* style definitions */
+a {
+  color: maroon;
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+.box {
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 10px 0;
+  background: white;
+}
+
+/* 3 positioned divs */
+.left, .middle, .right {
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+}
+.right { margin-right: 0; }
+
+/* Tableau container */
+.tableauBox {
+  border: 1px solid gray;
+  background: white;
+  padding: 10px;
+}

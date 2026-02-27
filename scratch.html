@@ -1,0 +1,123 @@
+<!--
+Eric Antillon
+IS-201
+From-Scratch Page
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>From Scratch</title>
+  <link rel="stylesheet" href="./css/scratch.css">
+</head>
+
+<body id="top">
+  <!-- Back to good pages -->
+  <a href="index.html">Home</a> |
+  <a href="resume.html">Resume</a> |
+  <a href="projects.html">Projects</a> |
+  <a href="contact.html">Contact</a>
+  <br><br>
+
+  <h2>From-Scratch Demo Page</h2>
+
+  <!-- on page anchor -->
+  <a href="#tableau">Jump to Tableau</a>
+  <br><br>
+
+  <!-- lists -->
+  <ol>
+    <li>School
+      <ul>
+        <li>BYU — Statistics (Data Science)</li>
+        <li>Business minor</li>
+      </ul>
+    </li>
+    <li>Interests
+      <ul>
+        <li>Soccer</li>
+        <li>Music</li>
+      </ul>
+    </li>
+  </ol>
+
+  <!-- Image -->
+  <div class="box">
+    <h3>Custom Image</h3>
+    <img src="assets/tableau.png" alt="My screenshot" width="300">
+  </div>
+
+  <!-- YouTube -->
+  <div class="box">
+    <h3>YouTube Video</h3>
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=mj7g4lhm0D3VMVU8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</div>
+
+  <!-- stylized divs -->
+  <div class="left">
+    <h3>Left Box</h3>
+    <p>This div is stylized.</p>
+  </div>
+
+  <div class="middle">
+    <h3>Middle Box</h3>
+    <p>This too.</p>
+  </div>
+
+  <div class="right">
+    <h3>Right Box</h3>
+    <p>This three.</p>
+  </div>
+
+  <div style="clear: both;"></div>
+  <br>
+
+  <!-- Tableau -->
+  <h3 id="tableau">Interactive Tableau</h3>
+
+  <div class="tableauBox">
+    <div class='tableauPlaceholder' id='vizScratch' style='position: relative'>
+      <noscript>
+        <a href='#'>
+          <img alt='Tableau Viz'
+            src='https://public.tableau.com/static/images/Re/RegionalSampleWorkbook/Stocks/1_rss.png'
+            style='border:none' />
+        </a>
+      </noscript>
+
+      <object class='tableauViz' style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='RegionalSampleWorkbook/Stocks' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+  </div>
+
+  <script type='text/javascript'>
+    var divElement = document.getElementById('vizScratch');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '100%';
+    vizElement.style.height = '600px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+  <br>
+  <a href="#top">Back to top</a>
+</body>
+</html>
